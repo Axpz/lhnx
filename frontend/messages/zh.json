@@ -1,0 +1,46 @@
+{
+  "Navigation": {
+    "home": "首页",
+    "products": "产品中心",
+    "news": "新闻资讯",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "login": "登录"
+  },
+  "Home": {
+    "heroTitle": "探索无限可能",
+    "heroSubtitle": "以先进技术重新定义视野",
+    "learnMore": "了解更多",
+    "viewProducts": "查看产品",
+    "techAdvantages": "核心技术优势",
+    "companyStrengths": "为什么选择我们",
+    "partnerships": "合作伙伴",
+    "stats": {
+      "years": "年行业经验",
+      "countries": "服务国家",
+      "patents": "核心专利"
+    }
+  },
+  "Products": {
+    "title": "产品中心",
+    "filter": "筛选",
+    "all": "全部",
+    "viewDetails": "查看详情"
+  },
+  "News": {
+    "title": "最新资讯",
+    "search": "搜索新闻...",
+    "readMore": "阅读更多"
+  },
+  "About": {
+    "title": "关于我们",
+    "mission": "企业使命",
+    "vision": "企业愿景",
+    "history": "发展历程"
+  },
+  "Common": {
+    "loading": "加载中...",
+    "search": "搜索",
+    "back": "返回"
+  }
+}

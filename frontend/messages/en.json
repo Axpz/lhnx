@@ -1,0 +1,46 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "products": "Products",
+    "news": "News",
+    "about": "About Us",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "Home": {
+    "heroTitle": "The Future of Possibility",
+    "heroSubtitle": "Exploring new horizons with advanced technology",
+    "learnMore": "Learn More",
+    "viewProducts": "View Products",
+    "techAdvantages": "Technical Advantages",
+    "companyStrengths": "Why Choose Us",
+    "partnerships": "Trusted Partners",
+    "stats": {
+      "years": "Years Experience",
+      "countries": "Countries Served",
+      "patents": "Patents"
+    }
+  },
+  "Products": {
+    "title": "Our Products",
+    "filter": "Filter",
+    "all": "All",
+    "viewDetails": "View Details"
+  },
+  "News": {
+    "title": "Latest News",
+    "search": "Search news...",
+    "readMore": "Read More"
+  },
+  "About": {
+    "title": "About Us",
+    "mission": "Our Mission",
+    "vision": "Our Vision",
+    "history": "History"
+  },
+  "Common": {
+    "loading": "Loading...",
+    "search": "Search",
+    "back": "Back"
+  }
+}

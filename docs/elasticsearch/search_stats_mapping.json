@@ -1,0 +1,42 @@
+{
+  "mappings": {
+    "properties": {
+      "keyword": {
+        "type": "keyword"
+      },
+      "created_at": {
+        "type": "date"
+      },
+      "openid": {
+        "type": "keyword"
+      },
+      "result_count": {
+        "type": "long"
+      },
+      "search_module": {
+        "type": "keyword"
+      },
+      "ip": {
+        "type": "ip"
+      },
+      "user_agent": {
+        "type": "keyword"
+      },
+      "platform": {
+        "type": "keyword"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "duration_ms": {
+        "type": "long"
+      },
+      "trace_id": {
+        "type": "keyword"
+      },
+      "extra": {
+        "type": "flattened"
+      }
+    }
+  }
+}

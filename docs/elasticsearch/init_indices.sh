@@ -1,0 +1,94 @@
+#!/bin/bash
+# curl -X GET "http://localhost:9200"
+
+curl -X PUT "http://localhost:9200/companies" -H 'Content-Type: application/json' '
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "base_index_analyzer": {
+          "type": "custom",
+          "char_filter": ["html_strip"],
+          "tokenizer": "ik_smart",
+          "filter": ["lowercase", "asciifolding", "stop", "stemmer"]
+        },
+        "base_search_analyzer": {
+          "type": "custom",
+          "char_filter": ["html_strip"],
+          "tokenizer": "ik_max_word",
+          "filter": ["lowercase", "asciifolding", "stop", "stemmer"]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "name": {
+        "type": "text",
+        "analyzer": "base_index_analyzer",
+        "search_analyzer": "base_search_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "legal_person": {
+        "type": "text",
+        "analyzer": "base_index_analyzer",
+        "search_analyzer": "base_search_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "registered_capital": {
+        "type": "text",
+        "analyzer": "base_index_analyzer",
+        "search_analyzer": "base_search_analyzer"
+      },
+      "founded_time": {
+        "type": "date"
+      },
+      "company_status": {
+        "type": "keyword"
+      },
+      "type": {
+        "type": "text",
+        "analyzer": "base_index_analyzer",
+        "search_analyzer": "base_search_analyzer"
+      },
+      "credit_code": {
+        "type": "keyword"
+      },
+      "address": {
+        "type": "text",
+        "analyzer": "base_index_analyzer",
+        "search_analyzer": "base_search_analyzer"
+      },
+      "business_scope": {
+        "type": "text",
+        "analyzer": "base_index_analyzer",
+        "search_analyzer": "base_search_analyzer"
+      },
+      "website": {
+        "type": "keyword"
+      },
+      "email": {
+        "type": "keyword"
+      },
+      "phone": {
+        "type": "keyword"
+      },
+      "updated_at": {
+        "type": "date"
+      }
+    }
+  }
+}
+'
+curl -X GET "http://localhost:9200/_cat/indices?v"
